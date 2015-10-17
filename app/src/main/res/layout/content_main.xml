@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/sbpower"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_action_power"/>
+
+    <ImageView
+        android:id="@+id/sbsource"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/sbpower"
+        android:src="@drawable/ic_action_source"/>
+
+    <ImageView
+        android:id="@+id/sbvolup"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/sbsource"
+        android:src="@drawable/ic_action_up"/>
+
+    <ImageView
+        android:id="@+id/sbvoldown"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/sbpower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/sbvolup"
+        android:src="@drawable/ic_action_down"/>
+
+    <TextView
+        android:id="@+id/textView"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:text="Soundbar"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sbpower"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TV"/>
+
+    <ImageView
+        android:id="@+id/tvpower"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_action_power"/>
+
+    <ImageView
+        android:id="@+id/tvsource"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/tvpower"
+        android:src="@drawable/ic_action_source"/>
+
+    <ImageView
+        android:id="@+id/tvchprev"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/tvsource"
+        android:src="@drawable/ic_action_ch_down"/>
+
+    <ImageView
+        android:id="@+id/tvchnext"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/tvchprev"
+        android:src="@drawable/ic_action_ch_up"/>
+
+    <ImageView
+        android:id="@+id/tvback"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/tvpower"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/tvchnext"
+        android:src="@drawable/ic_action_back"/>
+
+    <TextView
+        android:id="@+id/tvok"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tvpower"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="OK"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ImageView
+        android:id="@+id/tvright"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignStart="@+id/tvchnext"
+        android:layout_alignTop="@+id/tvok"
+        android:src="@drawable/ic_action_next"/>
+
+    <ImageView
+        android:id="@+id/tvleft"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/tvok"
+        android:layout_toStartOf="@+id/tvok"
+        android:src="@drawable/ic_action_prev"/>
+
+
+</RelativeLayout>
